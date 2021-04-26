@@ -4,11 +4,12 @@
 
 Develop a family of buildpacks to support the deno runtime and its unquie combination of features:
 
-- JavaScript/ES6 support
-- Native TypeScript support
-- ES Modules out of the box instead
+- JavaScript/ES6 support.
+- Native TypeScript support.
+- [WebAssembly](https://webassembly.org) support and bridging to WebAssembly compiled from Rust.
+- ES Modules and imports via HTTP.
 - Granular sandboxing of the runtimes access to system resources such as Networking, disk, etc.
-- Compilation of ES6 and/or TypeScript into a single executable along with the deno runtime
+- Compilation of ES6 and/or TypeScript into a single executable along with the deno runtime.
 - Build in package manager designed around distributed packaaged insetad of central repositories like npm
 
 ## Motivation
@@ -34,6 +35,7 @@ Name | Repository | Description
 --- | --- | ---
 Deno Paketo Buildpack | github.com/paketo-community/deno | Deno Language Family Buildpack
 Deno Distribution CNB | github.com/paketo-community/deno-dist | Distribution of the deno binary
+Deno Start CNB. | github.com/paketo-community/deno-start | Implementation buildpack handling running deno apps
 
 {{Give a high-level overview of implementation requirements and concerns. Be specific about areas of code that need to change, and what their potential effects are. Discuss which repositories and sub-components will be affected, and what its overall code effect might be.}}
 
